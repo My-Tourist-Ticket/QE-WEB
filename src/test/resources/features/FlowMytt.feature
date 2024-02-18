@@ -1,7 +1,7 @@
 @FlowMyTouristTicket
 Feature: Flow Application MyTouristTicket
 
-  @TC4
+  @TC3
   Scenario: Flow application for booking tour ticket as costumer
     Given User already on homepage
     When User click on Sign Up button
