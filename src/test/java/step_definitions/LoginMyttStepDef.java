@@ -34,7 +34,6 @@ public class LoginMyttStepDef {
     @When("User click on Login button")
     public void clickLoginButton() throws InterruptedException {
         loginMyttPage.clickLoginButton();
-        Thread.sleep(1000);
     }
 
 }
