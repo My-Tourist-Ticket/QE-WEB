@@ -1,5 +1,6 @@
 package org.example.pageObject;
 
+import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -25,7 +26,8 @@ public class HomeMyttPage {
     private WebElement cityList;
     @FindBy(xpath = "//div[@class='flex items-center justify-between container p-6 h-full']")
     private WebElement layoutFooter;
-
+    @FindBy(xpath = "//input[@class='px-5 py-1 outline-none border-none bg-transparent text-zinc-800 w-full']")
+    private WebElement searchField;
     public boolean verifyLogoMytt(){
         return logoWebsite.isDisplayed();
     }
@@ -46,5 +48,11 @@ public class HomeMyttPage {
     }
     public void clickBaliImage(){
         baliImage.click();
+    }
+    public void inputSearchField(String search){
+        searchField.sendKeys(search);
+    }
+    public void enterSearchField(){
+        searchField.sendKeys(Keys.ENTER);
     }
 }

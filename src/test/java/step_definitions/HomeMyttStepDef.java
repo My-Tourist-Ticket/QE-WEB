@@ -36,4 +36,10 @@ public class HomeMyttStepDef {
         Assert.assertTrue(homeMyttPage.verifyLayoutFooter());
         driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
     }
+
+    @When("User input {string} to search and click enter")
+    public void userInputToSearchAndClickEnter(String search) {
+        homeMyttPage.inputSearchField(search);
+        homeMyttPage.enterSearchField();
+    }
 }
