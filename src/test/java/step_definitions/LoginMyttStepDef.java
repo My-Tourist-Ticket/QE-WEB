@@ -1,6 +1,7 @@
 package step_definitions;
 
 import io.cucumber.java.en.Given;
+import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 import org.example.pageObject.LoginMyttPage;
 import org.junit.Assert;
@@ -36,4 +37,8 @@ public class LoginMyttStepDef {
         loginMyttPage.clickLoginButton();
     }
 
+    @Then("Error message {string} should appeared")
+    public void errorMessageShouldAppeared(String errorMessage) {
+        Assert.assertEquals(errorMessage,loginMyttPage.getErrorMessage());
+    }
 }
