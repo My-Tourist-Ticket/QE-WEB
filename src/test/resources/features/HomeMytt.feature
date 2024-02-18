@@ -12,7 +12,7 @@ Feature: Homepage MyTouristTicket
     And Verify that the page loads correctly
     And Verify that layout is displayed correctly
 
-  @TC4
+  @TC3
   Scenario: Test search functionality with valid city name
     Given User already on homepage
     When User click on Sign Up button

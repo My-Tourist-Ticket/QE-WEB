@@ -25,6 +25,8 @@ public class LoginMyttPage {
     private WebElement passwordField;
     @FindBy(xpath = "//button[@class='w-full py-3 rounded-md bg-red-500 text-white ']")
     private WebElement loginButton;
+    @FindBy(xpath = "//div[@class='text-sm opacity-90']")
+    private WebElement errorMessage;
 
     public boolean verifyLogoMytt(){
         return logoWebsite.isDisplayed();
@@ -46,6 +48,9 @@ public class LoginMyttPage {
     }
     public void clickLoginButton(){
         loginButton.click();
+    }
+    public String getErrorMessage(){
+        return errorMessage.getText();
     }
 
 
