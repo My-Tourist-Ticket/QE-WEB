@@ -1,5 +1,6 @@
 package step_definitions;
 
+import io.cucumber.java.en.And;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.When;
 import org.example.pageObject.CityMyttPage;
@@ -21,5 +22,11 @@ public class CityMyttStepDef {
     @When("User click on tourist attraction image")
     public void clickTourImage(){
         cityMyttPage.clickTourImage();
+    }
+
+    @And("Verify that city page load correctly")
+    public void verifyThatCityPageLoadCorrectly() {
+        cityMyttPage.verifyCityImage();
+
     }
 }

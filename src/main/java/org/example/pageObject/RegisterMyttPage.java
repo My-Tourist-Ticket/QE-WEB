@@ -12,7 +12,7 @@ public class RegisterMyttPage {
         PageFactory.initElements(driver, this);
         webDriver = driver;
     }
-    @FindBy(xpath = "//img[@alt='logo-brand']")
+    @FindBy(xpath = "//h3[@class='text-3xl font-semibold mt-5 mb-8 ']")
     private WebElement logoBrand;
     @FindBy(xpath = "//button[@id='radix-:rf:-trigger-Customer']")
     private WebElement customerText;
