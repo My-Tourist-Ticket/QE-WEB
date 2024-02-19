@@ -25,8 +25,9 @@ public class PaymentMyttStepDef {
         paymentMyttPage.inputEmail(email);
     }
     @When("User choose payment method")
-    public void clickPaymentMethod(){
+    public void clickPaymentMethod() throws InterruptedException {
         paymentMyttPage.clickButtonBank();
+        Thread.sleep(2000);
     }
     @When("User click on submit button")
     public void clickSubmitButton(){
