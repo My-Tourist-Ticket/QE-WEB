@@ -1,7 +1,7 @@
 @HomepageMyTouristTicket
 Feature: Homepage MyTouristTicket
 
-  @TC4
+  @TC3
   Scenario: Verify that homepage is running as intended
     Given User already on homepage
     When User click on Sign Up button

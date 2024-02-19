@@ -26,21 +26,21 @@ public class TransactionHistoryMyttPage {
     private WebElement loginButtonTH;
     @FindBy(xpath = "//a[.='Transaction History']")
     private WebElement labelTransactionHistory;
-    @FindBy(xpath = "//td[.='2024-02-18 10:45:46']")
+    @FindBy(xpath = "//td[.='2024-02-19 15:44:34']")
     private WebElement bookingDateData;
-    @FindBy(xpath = "//td[.='ca996f63-6f6a-4b2d-8816-935c159cc839']")
+    @FindBy(xpath = "//td[.='d2a7c1b0-2443-4422-aa01-b3169e696a07']")
     private WebElement bookingIdData;
-    @FindBy(xpath = "//td[.='kitten']")
+    @FindBy(xpath = "//tbody[@class='[&_tr:last-child]:border-0']/tr[1]/td[.='Rayhan Arjunastya Miftaharif']")
     private WebElement nameData;
-    @FindBy(xpath = "//tr[5]/td[.='Pantai Kuta']")
+    @FindBy(xpath = "//tbody[@class='[&_tr:last-child]:border-0']/tr[1]/td[.='Pantai Kuta']")
     private WebElement tourData;
-    @FindBy(xpath = "//tr[5]/td[.='Happy Bundling - 1 Ticket']")
+    @FindBy(xpath = "//tbody[@class='[&_tr:last-child]:border-0']/tr[1]/td[.='Ticket Regular']")
     private WebElement tourPackageData;
-    @FindBy(xpath = "//td[.='3']")
+    @FindBy(xpath = "//tbody[@class='[&_tr:last-child]:border-0']/tr[1]/td[.='11']")
     private WebElement quantityData;
-    @FindBy(xpath = "//tr[5]/td[.='100000']")
+    @FindBy(xpath = "//tbody[@class='[&_tr:last-child]:border-0']/tr[1]/td[.='20000']")
     private WebElement priceData;
-    @FindBy(xpath = "//tr[5]/td[.='settlement']")
+    @FindBy(xpath = "//tbody[@class='[&_tr:last-child]:border-0']/tr[1]/td[.='pending']")
     private WebElement statusData;
     @FindBy(xpath = "//a[.='Next']")
     private WebElement buttonNextListTH;
@@ -67,6 +67,9 @@ public class TransactionHistoryMyttPage {
     public void clickLoginButtonTH(){
         loginButtonTH.click();
     }
+
+    //===========================================Transaction History Pengelola==========================================//
+
     public void clickLabelTransactionHistory(){
         labelTransactionHistory.click();
     }

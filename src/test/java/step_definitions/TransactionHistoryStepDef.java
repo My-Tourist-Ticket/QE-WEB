@@ -35,7 +35,7 @@ public class TransactionHistoryStepDef {
     public void clickLoginButtonTH() {
         transactionHistoryMyttPage.clickLoginButtonTH();
     }
-    @Then("Pengelola click on label transaction history")
+    @When("Pengelola click on label transaction history")
     public void clickLabelTH(){
         transactionHistoryMyttPage.clickLabelTransactionHistory();
     }
