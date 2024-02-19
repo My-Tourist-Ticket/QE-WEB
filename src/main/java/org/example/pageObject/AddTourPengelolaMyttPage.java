@@ -13,22 +13,6 @@ public class AddTourPengelolaMyttPage {
         PageFactory.initElements(driver, this);
         webDriver = driver;
     }
-
-//    @FindBy(xpath = "//div[@class='flex justify-between items-center gap-x-10 w-full sticky top-0 z-50 bg-transparent transition-background duration-500 ease-in-out px-10']/img[@src='/assets/logo1-CvtGyCwG.png']")
-//    private WebElement logoWebsiteMT;
-//    @FindBy(xpath = "//button[@class='bg-red-500 w-32 text-white px-5 py-2 rounded-full']")
-//    private WebElement signUpButtonMT;
-//    @FindBy(xpath = "//a[.='Log in']")
-//    private WebElement loginTextMT;
-//    @FindBy(xpath = "//input[@name='email']")
-//    private WebElement emailFieldMT;
-//    @FindBy(xpath = "//input[@name='password']")
-//    private WebElement passwordFieldMT;
-//    @FindBy(xpath = "//button[@class='w-full py-3 rounded-md bg-red-500 text-white ']")
-//    private WebElement loginButtonMT;
-
-    //===============================================MyTour Pengelola===============================================//
-
     @FindBy(xpath = "//a[.='My Tour']")
     private WebElement buttonLabelMyTour;
     @FindBy(xpath = "//button[@class='bg-slate-900 text-white w-32 py-2 rounded-lg mt-3 ']")
@@ -60,26 +44,6 @@ public class AddTourPengelolaMyttPage {
     @FindBy(xpath = "//button[@class='flex justify-center items-center bg-black rounded-lg text-white w-full p-2']")
     private WebElement buttonAddNewTour;
 
-//    public boolean verifyLogoMyttMT(){
-//        return logoWebsiteMT.isDisplayed();
-//    }
-//    public void clickSignUpButtonMT(){
-//        signUpButtonMT.click();
-//    }
-//    public void clickLoginTextMT(){
-//        loginTextMT.click();
-//    }
-//    public void inputEmailFieldMT(String email){
-//        emailFieldMT.sendKeys(email);
-//    }
-//    public void inputPasswordFieldMT(String password){
-//        passwordFieldMT.sendKeys(password);
-//    }
-//    public void clickLoginButtonMT(){
-//        loginButtonMT.click();
-//    }
-
-    //===============================================MyTour Pengelola===============================================//
 
     public void clickButtonLabelMyTour(){
         buttonLabelMyTour.click();

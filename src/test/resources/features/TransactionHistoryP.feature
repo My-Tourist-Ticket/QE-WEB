@@ -1,7 +1,7 @@
 @TransactionHistoryPengelolaMyTouristTicket
   Feature: Transaction History Pengelola My Tourist Ticket
 
-    @TC5
+    @TC3
     Scenario: Verify that Transaction History is running as intended
       Given Pengelola already on homepage
       When Pengelola click on Sign Up button

@@ -1,7 +1,7 @@
 @AddTourPengelolaMyTouristTicket
 Feature: Add Tour Pengelola My Tourist Ticket
 
-  @TC3
+  @TC
   Scenario: Add tour pengelola with credentials data
     Given Pengelola already on homepage
     When Pengelola click on Sign Up button

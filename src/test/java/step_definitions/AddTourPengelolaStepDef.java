@@ -3,40 +3,13 @@ package step_definitions;
 import io.cucumber.java.en.When;
 import org.example.pageObject.AddTourPengelolaMyttPage;
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.support.ui.WebDriverWait;
 
 import java.io.File;
 import java.util.concurrent.TimeUnit;
 
 public class AddTourPengelolaStepDef {
     private final WebDriver driver = Hooks.driver;
-    private WebDriverWait wait;
     AddTourPengelolaMyttPage addTourPengelolaMyttPage = new AddTourPengelolaMyttPage(driver);
-
-//    @Given("Pengelola already on homepage")
-//    public void verifyHomepageMT(){
-//        Assert.assertTrue(myTourPengelolaMyttPage.verifyLogoMyttMT());
-//        driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
-//    }
-//    @When("Pengelola click on Sign Up button")
-//    public void clickSignUpButtonMT(){
-//        myTourPengelolaMyttPage.clickSignUpButtonMT();
-//    }
-//    @When("Pengelola click on Login text")
-//    public void clickLoginTextMT(){
-//        myTourPengelolaMyttPage.clickLoginTextMT();
-//    }
-//    @When("Pengelola input {string} as email and {string} as password")
-//    public void inputEmailAndPasswordMT(String email, String password){
-//        myTourPengelolaMyttPage.inputEmailFieldMT(email);
-//        myTourPengelolaMyttPage.inputPasswordFieldMT(password);
-//    }
-//    @When("Pengelola click on Login button")
-//    public void clickLoginButtonMT() {
-//        myTourPengelolaMyttPage.clickLoginButtonMT();
-//    }
-
-    //===========================================MY TOUR PENGELOLA==================================================//
 
     @When("Pengelola click on label my tour")
     public void clickLabelMT(){
