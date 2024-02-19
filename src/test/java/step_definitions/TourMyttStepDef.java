@@ -18,14 +18,14 @@ public class TourMyttStepDef {
         driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
     }
     @When("User choose package")
-    public void choosePackage(){
+    public void choosePackage() throws InterruptedException {
         tourMyttPage.clickRegularPackage();
         tourMyttPage.clickDateChoice();
+        Thread.sleep(3000);
     }
     @When("User add ticket {int} times")
-    public void addTicket(int numTime) throws InterruptedException {
+    public void addTicket(int numTime) {
         tourMyttPage.clickPlusIcon(numTime);
-        Thread.sleep(3000);
     }
     @When("User click on booking button")
     public void clickBookingButton(){

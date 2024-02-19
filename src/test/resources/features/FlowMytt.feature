@@ -1,7 +1,7 @@
 @FlowMyTouristTicket
 Feature: Flow Application MyTouristTicket
 
-  @TC4
+  @TC3
   Scenario: Flow application for booking tour ticket as costumer
     Given User already on homepage
     When User click on Sign Up button
@@ -17,6 +17,7 @@ Feature: Flow Application MyTouristTicket
     And User add ticket 10 times
     And User click on booking button
     Then User should be redirected to payment page
+    When Input "" as Full Name, "" as Phone Number, and "" as Email
     When User choose payment method
     And User click on submit button
     Then User should be redirected to page for completed the payment
