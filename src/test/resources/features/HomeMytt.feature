@@ -13,7 +13,7 @@ Feature: Homepage MyTouristTicket
     And Verify that layout is displayed correctly
 
   @TC3
-  Scenario: Test search functionality with valid city name
+  Scenario: Test search functionality with valid tour name
     Given User already on homepage
     When User click on Sign Up button
     And User click on Login text
@@ -22,5 +22,5 @@ Feature: Homepage MyTouristTicket
     Then User should be redirected to homepage
     And Verify that the page loads correctly
     And Verify that layout is displayed correctly
-    When User input "Bali" to search and click enter
-    Then User should be redirected to city page
+    When User input "Pantai Kuta" to search and click enter
+    Then User should be redirected to tour page

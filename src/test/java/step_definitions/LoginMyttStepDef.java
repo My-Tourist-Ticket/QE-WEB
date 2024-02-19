@@ -25,7 +25,7 @@ public class LoginMyttStepDef {
     @When("User click on Login text")
     public void clickLoginText(){
         loginMyttPage.clickLoginText();
-        Assert.assertTrue(loginMyttPage.verifyLogoBrand());
+        Assert.assertTrue(loginMyttPage.verifyLoginPage());
     }
     @When("User input {string} as email and {string} as password")
     public void inputEmailAndPassword(String email, String password){

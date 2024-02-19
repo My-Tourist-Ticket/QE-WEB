@@ -41,4 +41,4 @@ Feature: Login MyTouristTicket
     And User click on Login text
     And User input "rayhan11@gmail.com" as email and "thisiswrongpass" as password
     And User click on Login button
-    Then Error message "Password is incorrect" should appeared
+    Then Error message "Password incorrect" should appeared

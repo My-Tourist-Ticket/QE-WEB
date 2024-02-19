@@ -23,7 +23,6 @@ public class RegisterMyttStepDef {
     public void clickSignUpButton(){
         homeMyttPage.clickSignUpButton();
         Assert.assertTrue(registerMyttPage.verifyLogoBrand());
-        driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
     }
     @When("User click Customer")
     public void clickCustomer(){
