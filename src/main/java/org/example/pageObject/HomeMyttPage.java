@@ -12,7 +12,7 @@ public class HomeMyttPage {
         PageFactory.initElements(driver, this);
         webDriver = driver;
     }
-    @FindBy(xpath = "//div[@class='flex justify-between items-center gap-x-10 w-full sticky top-0 z-50 bg-transparent transition-background duration-500 ease-in-out px-10']/img[@src='/assets/logo1-D-qltNBN.png']")
+    @FindBy(xpath = "//div[@class='flex justify-between items-center gap-x-10 w-full sticky top-0 z-50 bg-transparent transition-background duration-500 ease-in-out px-10']/img[@src='/assets/logo1-CvtGyCwG.png']")
     private WebElement logoWebsite;
     @FindBy(xpath = "//button[@class='bg-red-500 w-32 text-white px-5 py-2 rounded-full']")
     private WebElement signUpButton;
