@@ -37,7 +37,7 @@ Berikut adalah langkah-langkah untuk menjalankan aplikasi QE-WEB:
 1. Clone repositori ini ke dalam sistem lokal Anda dengan menggunakan perintah berikut:
 
     ```bash
-    https://github.com/Capstone-Project-My-Tourist-Ticket/QE-WEB.git
+    git clone https://github.com/Capstone-Project-My-Tourist-Ticket/QE-WEB.git
     ```
 
 2. Pastikan Anda telah menginstal Java dan mengatur lingkungan (environment) Java dengan benar di sistem Anda.
